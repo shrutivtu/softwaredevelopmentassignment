@@ -99,7 +99,8 @@ form input[type="date"] {
 }
 
 .coursereview{
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 .coursereview label{
     margin-top: 1.5rem;
@@ -136,7 +137,16 @@ form input[type="date"] {
 }
 
 .gradprogramsourceandfuturecontainer{
+    margin: 20px;
     margin-top: 0.5rem;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 8px; */
+    /* background-color: #f9f9f9; */
+    max-width: 400px;
+    line-height: 1.6;
+    width: 80%;
+    padding-left: 65px;
 }
 
 .gradprogramsourceandfuturecontainer legend{
@@ -144,15 +154,13 @@ form input[type="date"] {
 }
 
 .reachoutcontainer input{
-    width: 30%; /* Ensure inputs and selects fit within their container */
+    width: 30%; 
     padding: 10px;
     font-size: 1rem;
     color: #333;
-    /* background-color: #f9f9f9; */
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Include padding and border in the width */
-    /* margin-top: 5px;  */
+    box-sizing: border-box; 
 }
 .personlinfocontainer label{
     font-size: 1.2rem;
@@ -161,6 +169,49 @@ form input[type="date"] {
 .gradprogramsourceandfuturecontainer label{
     font-size: 1.2rem;
 }
+
+/* General Styling for Checkboxes and Radios */
+.styled-checkbox input[type="checkbox"],
+.styled-radio input[type="radio"] {
+    display: none; /* Hide native inputs */
+}
+
+.styled-checkbox span,
+.styled-radio span {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.styled-checkbox span::before,
+.styled-radio span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border: 2px solid #666;
+    border-radius: 4px; /* Square with slightly rounded edges */
+    background-color: #fff;
+}
+
+/* For Radio Buttons */
+.styled-radio span::before {
+    border-radius: 50%; /* Make it circular */
+}
+
+/* Checked State Styling */
+.styled-checkbox input[type="checkbox"]:checked + span::before,
+.styled-radio input[type="radio"]:checked + span::before {
+    background-color: #d8470e; /* Fill with the color */
+    border-color: #d8470e; /* Change border color to match */
+}
+
 
 .coursereview label{
     font-size: 1.2rem;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 
@@ -72,7 +72,7 @@
                     </div>
                 </form>
             </div>
-            <div class="gradprogramsourceandfuturecontainer">
+            <!-- <div class="gradprogramsourceandfuturecontainer">
                 <div>
                     <legend>I have heard this graduate program from:</legend>
                     <label>
@@ -103,7 +103,47 @@
                     </label>
                     <div id="radio-error" class="error-message"></div>
                 </div>                
+            </div> -->
+            <div class="gradprogramsourceandfuturecontainer">
+                <div>
+                    <legend>I have heard this graduate program from:</legend>
+                    <label class="styled-checkbox">
+                        <input type="checkbox" name="programsource" value="media">
+                        <span>Media</span>
+                    </label><br>
+                    <label class="styled-checkbox">
+                        <input type="checkbox" name="programsource" value="ad">
+                        <span>Ad</span>
+                    </label><br>
+                    <label class="styled-checkbox">
+                        <input type="checkbox" name="programsource" value="agency">
+                        <span>Agency</span>
+                    </label><br>
+                    <label class="styled-checkbox">
+                        <input type="checkbox" name="programsource" value="other">
+                        <span>Other</span>
+                    </label>
+                    <div id="checkbox-error" class="error-message"></div>
+                </div>
+            
+                <div>
+                    <legend>When I finish my studies I will:</legend>
+                    <label class="styled-radio">
+                        <input type="radio" name="futureoption" value="returntocountry" required>
+                        <span>Return to my country</span>
+                    </label><br>
+                    <label class="styled-radio">
+                        <input type="radio" name="futureoption" value="jobineurope">
+                        <span>Find a job in Europe</span>
+                    </label><br>
+                    <label class="styled-radio">
+                        <input type="radio" name="futureoption" value="notdecided">
+                        <span>Do the practical training and then decide</span>
+                    </label>
+                    <div id="radio-error" class="error-message"></div>
+                </div>
             </div>
+            
             <div class="coursereview">
                 <p><label for="coursereview">Feedback for the course:</label></p>
                 <textarea id="coursereview" name="coursereview" rows="4" cols="50">The course has been informative. We got a good hands on using C language we I personally had forgotten because of its less use in the industry. I infact made few personal projects as well using C after many years. I liked the pattern of homework as well. It was something new for me. What could have been better?
