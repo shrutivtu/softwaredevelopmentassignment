@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Homepage</h1>
+    </header>
+    <main>
+        <section>
+            <div class="personlinfocontainer">
+                <h3 class="personalinfo">Personal Info</h3>
+                <form>
+                    <!-- First Colummn -->
+                    <div>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name" />
+                        </div>
+                        <div class="formlabelcontainer">
+                            <label for="minitial">M Initial:</label>
+                            <input type="text" name="minitial" id="minitial" placeholder="Enter your M Initial" />
+                        </div>
+                        <div class="formlabelcontainer">
+                            <label for="lname" l>Last Name:</label>
+                            <input type="text" name="lname" id="lname" placeholder="Enter your last name" />
+                        </div>
+                        <div class="formlabelcontainer">
+                            <label for="country">I am from:</label>
+                            <select id="country" name="country" required>
+                                <option value="" disabled selected>Select your country</option>
+                                <option value="usa">United States</option>
+                                <option value="germany">Germany</option>
+                                <option value="india">India</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="canada">Canada</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Second Column -->
+                    <div>
+                        <div>
+                            <label for="matriculation">Matriculation:</label>
+                            <input type="text" name="matriculation" id="matriculation" placeholder="Enter your Matriculation Number" />
+                        </div>
+                        <div class="formlabelcontainer">
+                            <label for="semester">Semester:</label>
+                            <input type="text" name="semester" id="semester" placeholder="Enter your semester" />
+                        </div>
+                        <div class="formlabelcontainer">
+                            <label for="program">Program:</label>
+                            <select id="program" name="program" required>
+                                <option value="" disabled selected>Select your Program</option>
+                                <option value="computerscience">Computer Science</option>
+                                <option value="bigdataandai">Big Data and AI</option>
+                                <option value="cybersecurity">Cyber Security</option>
+                                <option value="mba">MBA</option>
+                                <option value="applieddatascience">Applied Data Science</option>
+                            </select>
+                        </div>
+                        <div class="formlabelcontainer">
+                            <label for="startedin">Started In:</label>
+                            <input type="date" id="startedin" name="started-in" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="gradprogramsourceandfuturecontainer">
+                <div>
+                    <legend>I have heard this graduate program from:</legend>
+                    <label>
+                        <input type="checkbox" name="programsource" value="media"> Media
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="programsource" value="ad"> Ad
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="programsource" value="agency"> Agency
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="programsource" value="other"> Other
+                    </label>
+                    <div id="checkbox-error" class="error-message"></div>
+                </div>
+                
+                <div>
+                    <legend>When I finish my studies I will:</legend>
+                    <label>
+                        <input type="radio" name="futureoption" value="returntocountry" required> Return to my country
+                    </label><br>
+                    <label>
+                        <input type="radio" name="futureoption" value="jobineurope"> Find a job in Europe
+                    </label><br>
+                    <label>
+                        <input type="radio" name="futureoption" value="notdecided"> Do the practical training and then decide
+                    </label>
+                    <div id="radio-error" class="error-message"></div>
+                </div>                
+            </div>
+            <div class="coursereview">
+                <p><label for="coursereview">Feedback for the course:</label></p>
+                <textarea id="coursereview" name="coursereview" rows="4" cols="50">The course has been informative. We got a good hands on using C language we I personally had forgotten because of its less use in the industry. I infact made few personal projects as well using C after many years. I liked the pattern of homework as well. It was something new for me. What could have been better?
+                1. If the classes were offline it would have been much more interactive
+                2. If we could also practice C++ or Java in the course using OOPs concepts.</textarea>
+            </div>
+        </section>
+        <section class="summarycontainer">
+            <div class="cssinwebpage">
+                <h2 class="summaryheading">I will write a paragraph for each methodology of SDLC. There are many of them but I will suggest a few. My suggestions and reasons are as follows</h2>
+                <ul>
+                    <li>
+                        <p>Waterfall Model- This is a Bruteforce method which is very easy to understand. It has 6 stages typically starting from Requirements gathering, designing solutioning and implementation designing, actual implementation of coding, testing it in UAT, installation of the packages at places wherever required for the users to the final stage which is just maintaining it. The cycle is very simple to implement but very tedious as all the requirements should be known. The stage freeze happens when you cross that stage to the next one. So if the requirements are very clear then it is one of the best methods available to follow for Software Development.</p>
+                    </li>
+                    <li>
+                        <p>V Shaped SDLC Model- Lets just say it is an enhanced version of Waterfall model. The additional step here is that it pairs up every development stage with a testing phase to overcome the disadvantages of waterfall model. If your development stage is paired up with testing stage as well then there are less chances of bugs in production or in the final release or you dont have to do one big bang bang release/testing. It works well for the projects which are small and where requirements are known. It doesnt work well where there is more complication in requirements or things change rapidly.</p>
+                    </li>
+                    <li>
+                        <p>Rapid Application Development- As the name suggests its used for developing a project in a fast pace. The project is broken down into modules and important modules are developed first. It follows a Time Box approach where customer is also involved in its stages. Customer involement reduces the risk of the modules to be different from the actual expectations of the customers. It should be used when requirements are known and technical complexities are less. It can also be used for time sensitive projects.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cssinwebpage">
+                <h2 class="summaryheading">Among so many SDLC methodologies the ones that are in AGILE classification are better. Among AGILE SDLC methods, I also have a few suggestions.</h2>
+                <ul>
+                    <li>
+                        <p>Extreme Programming- Its used for small to medium sized projects where there is a lot of coding required. Even communication among teammates is done through coding. It starts with a planning stage and then small small releases are done in the form of different stories and that is used across the teams to communicate and to keep a track of the progress. The requirements are written in the form of test cases as well. It involves a lot of pair programming as well. </p>
+                    </li>
+                    <li>
+                        <p>Feature Driven Design- It involved listing down of features after planning and drawing sequential diagrams from the meetings. Then the development sequence is planned feature by feature. The team produces sequence diagrams feature by feature. And then the development happens by features. Testing and release happens after every feature or a set of feature development. Its the mostly adapted method in the Software Industry. As its a very practical method to keep the dependency less on extrenal factors for example an employee leaving the company.</p>
+                    </li>
+                    <li>
+                        <p>Adaptive Software Development- It involves rapid response to changing requirements. The project is divided into various iterations and then risk analysis, development, testing etc. It bascially has three phases- Speculation- Its the initial phase where basically requirements are gathered through discussions, analysis, surveys etc. Then comes the next phase which is Collaboration- It involves communication and collaboration but individual creativity also plays a major role. Then comes the third phase which is- Learning. Here the workers are expected to learn more about the project, technologies etc through group discussions and technical interviews. It definitely leads to a good quality output but its time consuming and reaching the quality expected is not always possible.</p>
+                    </li>
+                    <li>
+                        <p>Scrum- Its used for complex projects where several teams have to work towards one common goal. Its  a framework that team uses to self organize. The various features are Sprint- which is a time box method for development completion. Sprint Review- To check incomplete tasks regarding the features. Sprint Retrospective- Its a phase where project backlogs are addressed and a conclusion is made. The advantages are that its a very well organised framework for any MNC to use. When its combined with Feature development technique, it becomes the most widely adapted technique in the MNCs. Here customer satisfaction is also very important.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cssinwebpage">
+                <h2 class="summaryheading">In this Software Development course of SRH we learn the following.</h2>
+                <ul>
+                    <li>
+                        <p>We learnt about basics of Computer for example how it works, types of storage associated with the computer, high level programming language and their features for example Object Oriented Programming Language. We also learnt about the components of a Computer System which consists of motherboard and OS.
+                        </p>
+                    </li>
+                    <li>
+                        <p>We also learnt about various SDLC methods for example Waterfall method, V-Shaped Waterfall method, Rapid Application Model. We learnt how Agile SDLCs are more robust than the typical methods like Waterfall method.</p>
+                    </li>
+                    <li>
+                        <p>We also learnt about basics and advanced concepts of C programming. We went from defining basic functions and arrays to dynamic memory allocations for Linked List and other data structures. We also did various assignments on the same.</p>
+                    </li>
+                    <li>
+                        <p>We also learnt about the basics of HTML, CSS and JavaScript and then went on to implement a project on our own using various types of validations. We learnt how to structure a page using HTML and CSS and implement functionality using JavaScript whenever needed.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cssinwebpage">
+                <h2 class="summaryheading">I have used CSS in this webpage and there are three ways to use it.</h2>
+                <ul>
+                    <li>
+                        <!-- <p>First is the inline styling method where you write CSS directly as an attribute to the html tag.</p> -->
+                        <p>
+                            First is the inline styling method where you write CSS directly as an attribute to the HTML tag.
+                        </p>
+                        <pre style="background-color: white; border: 2px solid #ddd; border-radius: 5px; padding: 10px; font-family: 'Courier New', monospace; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+                        &lt;h1 style="color: blue;"&gt;Hello World!&lt;/h1&gt;
+                        </pre>
+
+                    </li>
+                    <li>
+                        <p>
+                            Then we can also add a <code>&lt;style&gt;</code> tag in the HTML file to define classes and IDs. After that, use those class names and IDs as attributes in the HTML tags. Here's an example:
+                        </p>
+                        <pre style="background-color: white; border: 2px solid #ddd; border-radius: 5px; padding: 10px; font-family: 'Courier New', monospace; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+                        &lt;style&gt;
+                            .red-text {
+                            color: red;
+                            }
+                            #blue-heading {
+                            color: blue;
+                            }
+                        &lt;/style&gt;
+                        
+                        &lt;h1 id="blue-heading"&gt;This is a blue heading&lt;/h1&gt;
+                        &lt;p class="red-text"&gt;This is a red paragraph.&lt;/p&gt;
+                        </pre>                          
+                    </li>
+                    <li>
+                        <p>
+                            The third way is to create a separate CSS file and link it using the <code>&lt;link&gt;</code> tag in the HTML file. Here's an example:
+                        </p>
+                        <pre style="background-color: white; border: 2px solid #ddd; border-radius: 5px; padding: 10px; font-family: 'Courier New', monospace; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); white-space: pre-wrap; word-wrap: break-word;">
+                            &lt;!-- Link the external CSS file --&gt;
+                            &lt;link rel="stylesheet" href="styles.css"&gt;
+                          
+                            &lt;!-- Content styled using external CSS --&gt;
+                            &lt;h1 class="green-heading"&gt;Welcome!&lt;/h1&gt;
+                            &lt;p class="italic-text"&gt;This is styled using an external CSS file.&lt;/p&gt;
+                          
+                            /* styles.css */
+                            .green-heading {
+                              color: green;
+                            }
+                            .italic-text {
+                              font-style: italic;
+                            }
+                          </pre>
+                           
+                    </li>
+                </ul>
+            </div>
+            <div class="cssinwebpage">
+                <h2 class="summaryheading">The reason CSS is used in the webpage are- </h2>
+                <ol>
+                    <li>
+                        <p>To make the page look more beautiful. This amounts to better user experience.</p>
+                    </li>
+                    <li>
+                        <p>Faster page speed as you can use the same classes and common styling at various places. So less code for more functionalities.</p>
+                    </li>
+                    <li>
+                        <p>Web page compatibility across browsers and devices. CSS is a great tool to build a page for businessed which can be used by clients and customers in various devices. The page will look organised and beautiful in all the devices and browsers.</p>
+                    </li>
+                </ol>
+            </div>
+            <div class="cssinwebpage">
+                <h2 class="summaryheading">We use Javascript in webpage development. The reasons are as follows- </h2>
+                <ul>
+                    <li>
+                        <p>To add dynamic flavour to the static websites. Earlier there were only static pages which used to surface on the internet. With the implementation of Javascript you can make your app more interactable with the users.</p>
+                    </li>
+                    <li>
+                        <p>To add dynamic elements to the static websites based on the situation and requirements. Especially very useful in form validations to developing video games.</p>
+                    </li>
+                    <li>
+                        <p>It doesnt need an environmental setup so its very easy to run and implement. Very easily adaptable.</p>
+                    </li>
+                    <li>
+                        <p>It can again run all devices and broswers. It can also run on both front end and server side.</p>
+                    </li>
+                    <li>
+                        <p>Wide commmunity with rapid advancements happening in the features of the language. Constant upgradation is happening in this ecosystem which makes it easier for a developer to match the standard of the web applications.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="reachoutcontainer">
+            <h3>I have done this project by myself and will accept the consequences if found otherwise</h3>
+            <p>
+                You can reach me at <input type="email" placeholder="Enter your email" value="100002622@stud.srh-university.de">
+            </p>
+        </section>
+        <div class="finalsubmitcontainer">
+            <button onclick="handleSubmit()">Submit Info</button>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

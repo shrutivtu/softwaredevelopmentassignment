@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto';
+    font-size: 22px;
+    box-sizing: border-box;
+    /* background-color: ; */
+    background-image: linear-gradient(60deg, #fbbba1, #ccd3db);
+    padding: 1rem;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    /* background-color: #d8470e !important; */
+    color: black;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    /* border: 1px solid grey; */
+    margin-top: 0.5rem;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    /* background-color: #fff; */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.personalinfo{
+    margin-bottom: 1rem;
+}
+
+h2, h3 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add spacing between columns */
+    max-width: 85%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+form > div {
+    flex: 1 1 calc(50% - 20px); /* Allow two columns, evenly spaced */
+    min-width: 300px; /* Prevent columns from becoming too small */
+    /* box-sizing: border-box; */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 80%; 
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    margin-top: 5px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Ensure date picker input fits */
+form input[type="date"] {
+    padding: 10px;
+    width: 80%;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.coursereview{
+    width: 100%;
+}
+.coursereview label{
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.coursereview textarea{
+    width: 100%;
+    height: 10rem;
+    box-sizing: border-box;
+    /* background-color: #e8c9b8; */
+    /* background-color: rgba(255, 245, 240, 0.8);  */
+    background-image: linear-gradient(60deg, #fddbc5, #e2e8ef);
+    border: 1px solid #b4b9c0;
+    color: #2f2f2f; /* For good text visibility */
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+.summarycontainer{
+    padding:1rem;
+}
+
+.cssinwebpage{
+    padding: 1rem;
+}
+
+.summaryheading{
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.formlabelcontainer{
+    margin-top: 0.5rem;
+}
+
+.gradprogramsourceandfuturecontainer{
+    margin-top: 0.5rem;
+}
+
+.gradprogramsourceandfuturecontainer legend{
+    margin-bottom: 0.5rem;
+}
+
+.reachoutcontainer input{
+    width: 30%; /* Ensure inputs and selects fit within their container */
+    padding: 10px;
+    font-size: 1rem;
+    color: #333;
+    /* background-color: #f9f9f9; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the width */
+    /* margin-top: 5px;  */
+}
+.personlinfocontainer label{
+    font-size: 1.2rem;
+}
+
+.gradprogramsourceandfuturecontainer label{
+    font-size: 1.2rem;
+}
+
+.coursereview label{
+    font-size: 1.2rem;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.finalsubmitcontainer button{
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #d8470e !important;
+    color: white;
+    cursor: pointer;
+}
+
+.summarycontainer li p{
+    font-size: 1.2rem;
+}
