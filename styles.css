@@ -236,3 +236,13 @@ form input[type="date"] {
 .summarycontainer li p{
     font-size: 1.2rem;
 }
+
+footer section{
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer section div{
+    display: flex;
+    justify-content: center;
+}
