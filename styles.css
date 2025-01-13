@@ -7,7 +7,6 @@ body{
     font-family: 'Roboto';
     font-size: 22px;
     box-sizing: border-box;
-    /* background-color: ; */
     background-image: linear-gradient(60deg, #fbbba1, #ccd3db);
     padding: 1rem;
 }
@@ -16,7 +15,6 @@ header{
     display: flex;
     justify-content: center;
     padding: 1rem 1.5rem;
-    /* background-color: #d8470e !important; */
     color: black;
     width: 50%;
     margin: 0 auto;
@@ -39,7 +37,6 @@ main{
 section {
     margin-bottom: 20px;
     padding: 15px;
-    /* background-color: #fff; */
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -55,16 +52,15 @@ h2, h3 {
 form {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Add spacing between columns */
+    gap: 20px; 
     max-width: 85%;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
 form > div {
-    flex: 1 1 calc(50% - 20px); /* Allow two columns, evenly spaced */
-    min-width: 300px; /* Prevent columns from becoming too small */
-    /* box-sizing: border-box; */
+    flex: 1 1 calc(50% - 20px); 
+    min-width: 300px; 
 }
 
 label {
@@ -90,7 +86,6 @@ input[type="checkbox"], input[type="radio"] {
     margin-right: 10px;
 }
 
-/* Ensure date picker input fits */
 form input[type="date"] {
     padding: 10px;
     width: 80%;
@@ -110,11 +105,9 @@ form input[type="date"] {
     width: 100%;
     height: 10rem;
     box-sizing: border-box;
-    /* background-color: #e8c9b8; */
-    /* background-color: rgba(255, 245, 240, 0.8);  */
     background-image: linear-gradient(60deg, #fddbc5, #e2e8ef);
     border: 1px solid #b4b9c0;
-    color: #2f2f2f; /* For good text visibility */
+    color: #2f2f2f;
     padding: 10px;
     border-radius: 5px;
     outline: none;
@@ -140,9 +133,6 @@ form input[type="date"] {
     margin: 20px;
     margin-top: 0.5rem;
     padding: 20px;
-    /* border: 1px solid #ccc; */
-    /* border-radius: 8px; */
-    /* background-color: #f9f9f9; */
     max-width: 400px;
     line-height: 1.6;
     width: 80%;
@@ -170,10 +160,9 @@ form input[type="date"] {
     font-size: 1.2rem;
 }
 
-/* General Styling for Checkboxes and Radios */
 .styled-checkbox input[type="checkbox"],
 .styled-radio input[type="radio"] {
-    display: none; /* Hide native inputs */
+    display: none;
 }
 
 .styled-checkbox span,
@@ -200,16 +189,15 @@ form input[type="date"] {
     background-color: #fff;
 }
 
-/* For Radio Buttons */
 .styled-radio span::before {
-    border-radius: 50%; /* Make it circular */
+    border-radius: 50%; 
 }
 
 /* Checked State Styling */
 .styled-checkbox input[type="checkbox"]:checked + span::before,
 .styled-radio input[type="radio"]:checked + span::before {
-    background-color: #d8470e; /* Fill with the color */
-    border-color: #d8470e; /* Change border color to match */
+    background-color: #d8470e; 
+    border-color: #d8470e; 
 }
 
 

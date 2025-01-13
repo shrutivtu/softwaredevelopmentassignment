@@ -47,46 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Checkbox validation
-    // function validateCheckboxes(fieldGroup, errorContainerId, message) {
-    //     const errorContainer = document.getElementById(errorContainerId);
-
-    //     function checkSelection() {
-    //         const anyChecked = Array.from(fieldGroup).some((checkbox) => checkbox.checked);
-    //         if (!anyChecked) {
-    //             errorContainer.textContent = message;
-    //             errorContainer.style.color = "red";
-    //         } else {
-    //             errorContainer.textContent = "";
-    //         }
-    //     }
-
-    //     fieldGroup.forEach((checkbox) => {
-    //         checkbox.addEventListener("change", checkSelection);
-    //     });
-    //     checkSelection();
-    // }
-
-    // // Radio button validation
-    // function validateRadios(fieldGroup, errorContainerId, message) {
-    //     const errorContainer = document.getElementById(errorContainerId);
-
-    //     function checkSelection() {
-    //         const anySelected = Array.from(fieldGroup).some((radio) => radio.checked);
-    //         if (!anySelected) {
-    //             errorContainer.textContent = message;
-    //             errorContainer.style.color = "red";
-    //         } else {
-    //             errorContainer.textContent = "";
-    //         }
-    //     }
-
-    //     fieldGroup.forEach((radio) => {
-    //         radio.addEventListener("change", checkSelection);
-    //     });
-    //     checkSelection();
-    // }
-
     // Apply validations
     validateField(nameField, /^[A-Za-z]+$/, "Only alphabetic characters are allowed for Name.");
     validateField(minitialField, /^[A-Za-z]+$/, "Only alphabetic characters are allowed for Middle Initial.");
@@ -103,8 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // validateCheckboxes(checkboxes, "checkbox-error", "Please select at least one source.");
-    // validateRadios(radioButtons, "radio-error", "Please select an option.");
 });
 
 function handleSubmit(){
