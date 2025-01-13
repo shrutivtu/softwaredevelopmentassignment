@@ -143,6 +143,14 @@ form input[type="date"] {
     margin-bottom: 0.5rem;
 }
 
+.reachoutcontainer h3{
+    font-size: 1.2rem;
+}
+
+.reachoutcontainer p{
+    font-size: 1.2rem;
+}
+
 .reachoutcontainer input{
     width: 30%; 
     padding: 10px;
